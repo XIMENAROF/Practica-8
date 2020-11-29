@@ -1,0 +1,27 @@
+/*Un almacén tiene una promoción: a todos los trajes que tienen un precio superior a $2500.00 se les aplicará un descuento de 15 %,
+ a todos los demás se les aplicará sólo 8 %.
+  Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar un traje
+   y de cuánto es el descuento que obtendrá. */
+   
+   #include<stdio.h>   //biblioteca
+   int main(){        //funcion principal
+   
+   float traje,total; //variables      
+   //INICIO
+   printf("Atiende Ximena Robledo\n\n");
+   printf("Ingrese el costo del traje\n");
+   scanf("%f",&traje);
+   
+        if(traje>2500){              //estructura selectiva if
+        	total=traje-(traje*.15);
+        	printf("Se te aplicara un descuento del 15 porciento \n");
+        	printf("El total a pagar es de: %f\n",total);
+        }
+        else{
+        	total=traje-(traje*.08);
+        	printf("Se te aplicara un descuent del 8 porciento \n");
+        	printf("El total a pagar es de: %f\n",total);
+        }
+   
+  	return 0;
+   }

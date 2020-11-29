@@ -1,0 +1,22 @@
+//Algoritmo (positivo negativo)
+
+//Programa con estructura selectiva if
+#include<stdio.h>
+int main() { //funcion pricipal
+
+//Variables
+int  numero;
+//INICIO
+printf ("Ingrese un numero \n");
+scanf("%i", &numero);
+    
+         if(numero<0){
+    	   printf("El numero es negativo");
+	   }
+    	 else{
+		   printf("El numero es positivo");
+      }
+       
+    return 0;
+}
+

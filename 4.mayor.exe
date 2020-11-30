@@ -1,0 +1,30 @@
+//Se requiere determinar cuál de tres cantidades proporcionadas es la mayor.
+
+#include<stdio.h>   //biblioteca
+int main(){         //funcion principal
+
+int n1,n2,n3; //variables
+//INICIO
+
+printf("Ingresar una cantida entera\n");    //solicitando datos
+scanf("%d",&n1);
+printf("Ingresar una cantida entera\n'");
+scanf("%d",&n2);
+printf("Ingresar una cantida entera\n");
+scanf("%d",&n3);
+
+
+    if (n1>n2 && n1>n3){               //condicional if anidado
+	
+    	 printf("\nLa cantidad mayor es: %i",n1);
+    }
+   else if( n2>n1 && n2>n3){
+   	
+   	     printf("\nLa cantidad mayor es: %i",n2);
+   }
+   else  {
+   	    printf("\nLa cantidad mayor es:%i",n3);
+   	
+   	}
+return 0;	
+}

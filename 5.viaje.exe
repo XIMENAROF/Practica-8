@@ -1,0 +1,42 @@
+/*5.-El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y 
+cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por 
+cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del 
+autobús es de $4000.00, sin importar el número de alumnos. Realice un algoritmo que permita determinar el pago a la compañía de autobuses
+ y lo que debe pagar cada alumno por el viaje. */
+
+#include<stdio.h>
+int main(){
+	
+	int alum;
+	float total;   //variables
+//INICIO
+printf("Binvenidos a la compañia de viajesFest");
+printf("\nAtiende Ximena Robledo");
+printf("\nIngrese la cantidad de alumnos\n");
+scanf("%i",&alum);
+                              //if anidado
+  if (alum>=100){
+  	  printf("\nCada alumno debe pagar $65");
+  	  total=(alum*60);
+  	  printf("Se debe pagar a la compañia de viajes $ %.2f",total);
+	}
+      else if (alum>50 && alum<=90){
+  	        printf("\nCada alumno debe pagar $70");
+  	        total=(alum*70);
+  	        printf("\nSe debe pagar a la compania de viajes :$ %.2f",total);
+  	   } 	
+	       else if (alum >=30 && alum<=49){
+	            printf("\nCada alumno debe pagar $95");
+  	            total=(alum*95);
+  	            printf("\nSe debe pagar a la compania de viajes :$ %.2f",total);       	
+		   }
+		   else if (alum<30){
+		   	    printf("\nse tiene que pagar $4000 por el servicio");
+		   	    total=(4000/alum);
+		   	    printf("\nCada alumno debe pagar:%.2f",total);
+		   	}
+		   	else{
+		   		printf("\nERROR");
+			   }
+return 0;	
+}
